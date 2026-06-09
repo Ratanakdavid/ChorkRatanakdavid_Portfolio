@@ -36,7 +36,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between w-[90%] mx-auto h-full">
         <Logo />
 
-        
+       
         <ul className="hidden lg:flex space-x-10">
           {navLinks.map((link) => (
             <li key={link.url}>
@@ -50,9 +50,10 @@ export default function Navbar() {
           ))}
         </ul>
 
+        
         <div className="hidden lg:flex items-center gap-4">
           <LinkButton
-            href="/document/David CV.pdf"
+            href="/document/RatanakDavid CV.pdf"
             text="Download CV"
             download
             icon={LuDownload}
@@ -61,21 +62,12 @@ export default function Navbar() {
         </div>
 
         
-        <div className="flex lg:hidden items-center gap-3">
-          <LinkButton
-            href="/document/David CV.pdf"
-            text="Download CV"
-            download
-            icon={LuDownload}
-            iconPosition="left"
-          />
-          <button
-            onClick={() => setNavOpen(!navOpen)}
-            className="w-8 h-8 cursor-pointer text-white z-100"
-          >
-            {navOpen ? <LuX size={28} /> : <LuMenu size={28} />}
-          </button>
-        </div>
+        <button
+          onClick={() => setNavOpen(!navOpen)}
+          className="w-8 h-8 cursor-pointer text-white lg:hidden"
+        >
+          {navOpen ? <LuX size={28} /> : <LuMenu size={28} />}
+        </button>
 
         <MobileNav navOpen={navOpen} setNavOpen={setNavOpen} />
       </div>
