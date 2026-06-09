@@ -32,9 +32,11 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`h-18 fixed z-50 w-full transition-all duration-300 ${navBackground ? "bg-slate-900 shadow" : ""}`}>
-      <div className="flex items-center justify-between w-[90%] mx-auto">
+    <nav className={`h-16 fixed z-50 w-full transition-all duration-300 ${navBackground ? "bg-slate-900/95 backdrop-blur-sm shadow-lg" : "bg-transparent"}`}>
+      <div className="flex items-center justify-between w-[90%] mx-auto h-full">
         <Logo />
+
+        
         <ul className="hidden lg:flex space-x-10">
           {navLinks.map((link) => (
             <li key={link.url}>
@@ -47,7 +49,8 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <div className="flex items-center gap-4">
+
+        <div className="hidden lg:flex items-center gap-4">
           <LinkButton
             href="/document/David CV.pdf"
             text="Download CV"
@@ -56,12 +59,24 @@ export default function Navbar() {
             iconPosition="left"
           />
         </div>
-        <button
-          onClick={() => setNavOpen(!navOpen)}
-          className="w-8 h-8 cursor-pointer text-white z-100 lg:hidden"
-        >
-          {navOpen ? <LuX size={30} /> : <LuMenu size={30} />}
-        </button>
+
+        
+        <div className="flex lg:hidden items-center gap-3">
+          <LinkButton
+            href="/document/David CV.pdf"
+            text="Download CV"
+            download
+            icon={LuDownload}
+            iconPosition="left"
+          />
+          <button
+            onClick={() => setNavOpen(!navOpen)}
+            className="w-8 h-8 cursor-pointer text-white z-100"
+          >
+            {navOpen ? <LuX size={28} /> : <LuMenu size={28} />}
+          </button>
+        </div>
+
         <MobileNav navOpen={navOpen} setNavOpen={setNavOpen} />
       </div>
     </nav>
