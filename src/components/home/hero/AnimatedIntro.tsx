@@ -6,9 +6,9 @@ const Typewriter = dynamic(() => import("typewriter-effect"), { ssr: false });
 
 export default function AnimatedIntro() {
   return (
-    <div className="text-lg sm:text-2xl h-30 px-8 text-center font-medium 
+    <div data-aos="fade-up" data-aos-delay="400" className="text-lg sm:text-2xl h-30 px-8 text-center font-medium 
     text-gray-400">
-      Hi, I&apos;m RatanakDavid - A passionate 
+      Welcome to my portfolio I&apos;m RatanakDavid - A passionate 
       <span className="text-indigo-500 font-bold">
         <Typewriter 
           options={{

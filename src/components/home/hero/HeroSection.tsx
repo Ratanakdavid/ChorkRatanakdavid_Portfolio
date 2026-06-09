@@ -9,10 +9,8 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="h-screen relative flex justify-center items-center
-    overflow-hidden flex-col"
+      className="h-screen relative flex justify-center items-center overflow-hidden flex-col"
     >
-      
       <div style={{ width: "100%", height: "600px", position: "relative" }}>
         <Particles
           particleColors={["#ffffff"]}
@@ -27,8 +25,8 @@ export default function HeroSection() {
         />
       </div>
       <div className="absolute z-10 flex flex-col items-center">
-        <div className="w-37.5 h-37.5 relative">
-          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 blur-lg animate-pulse opacity-50"></div>
+        <div className="w-37.5 h-37.5 relative" data-aos="fade-up">
+          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 blur-lg animate-pulse opacity-50" />
           <Image
             src="/image/boysmos.jpg"
             alt="boysmos"
@@ -39,15 +37,22 @@ export default function HeroSection() {
           />
         </div>
         <h1
-          className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl
-            my-6 font-bold tracking-wide text-transparent bg-clip-text bg-linear-to-r
-            from-indigo-500 to-gray-300"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl my-6 font-bold tracking-wide text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-gray-300"
         >
           Hi, I&apos;m a Web Developer
         </h1>
         <AnimatedIntro />
-        <LinkButton href="#project" text="View My Work" icon={LuArrowRight} />
-        rounded
+        <LinkButton
+          href="#projects"
+          text="View My Work"
+          icon={LuArrowRight}
+          rounded
+          aosType="fade-up"
+          aosDelay={600}
+          animate
+        />
       </div>
     </section>
   );
