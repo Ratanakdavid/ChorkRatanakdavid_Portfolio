@@ -18,11 +18,11 @@ const projects = [
   },
   {
     title: "Enrollment & Classroom Scheduling System",
-    imagePath: "/image/enrollment.jpeg",
+    imagePath: "/image/image.png",
     description:
       "A system to manage student enrollments, course assignments, and classroom scheduling for faculty and administrators.",
     tags: ["School Project", "Software Engineering"],
-    githubUrl: "https://github.com/Chumdararith-LOU/Project-3-Course-Enrollment-and-Classroom-Scheduling-System.git",
+    githubUrl: "https://github.com/Ratanakdavid/Enrollment-scheduling-system.git",
     techs: [
       { name: "Spring Boot" },
       { name: "MySQL" },
