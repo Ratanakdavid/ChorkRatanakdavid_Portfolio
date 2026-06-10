@@ -8,6 +8,8 @@ import {
   DiGit,
   DiNodejs,
   DiLaravel,
+  DiLinux,
+  DiPhp,
 } from "react-icons/di";
 import {
   SiTypescript,
@@ -16,6 +18,9 @@ import {
   SiNextdotjs,
   SiVuedotjs,
   SiPostgresql,
+  SiJenkins,
+  SiFlutter,
+  SiDart,
 } from "react-icons/si";
 
 const leftGroups = [
@@ -36,6 +41,13 @@ const leftGroups = [
       { name: "MongoDB", icon: <DiMongodb />, color: "text-green-500" },
     ],
   },
+  {
+    category: "Mobile",
+    skills: [
+      { name: "Flutter", icon: <SiFlutter />, color: "text-cyan-400" },
+      { name: "Dart", icon: <SiDart />, color: "text-cyan-500" },
+    ],
+  },
 ];
 
 const rightGroups = [
@@ -46,6 +58,7 @@ const rightGroups = [
       { name: "Node.js", icon: <DiNodejs />, color: "text-green-500" },
       { name: "Spring Boot", icon: <SiSpringboot />, color: "text-green-400" },
       { name: "Laravel", icon: <DiLaravel />, color: "text-red-500" },
+      { name: "PHP", icon: <DiPhp />, color: "text-indigo-400" },
     ],
   },
   {
@@ -53,6 +66,8 @@ const rightGroups = [
     skills: [
       { name: "Git", icon: <DiGit />, color: "text-orange-500" },
       { name: "Docker", icon: <DiDocker />, color: "text-blue-400" },
+      { name: "Linux", icon: <DiLinux />, color: "text-yellow-300" },
+      { name: "Jenkins", icon: <SiJenkins />, color: "text-red-400" },
     ],
   },
 ];
