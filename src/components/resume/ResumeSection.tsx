@@ -15,25 +15,25 @@ export default function ResumeSection() {
           <Header title="My Education" as="h2" />
           <div className="space-y-6">
             <ResumeCard
-              icon={LuGraduationCap}
-              role="High School Diploma"
-              description="Anuwat High School — completed secondary education and graduated in 2022."
-            />
-            <ResumeCard
-              icon={LuGraduationCap}
-              role="Information & Communication Engineering"
-              description="Institute of Technology of Cambodia (ITC) — majoring in ICT with focus on full-stack web development."
-              date="2022 - Present"
-            />
-            <ResumeCard
               icon={LuLanguages}
               role="Foreign Languages"
               description="Paññāsāstra Institute of Foreign Languages — studied English and French."
               date="2019 - 2021"
             />
+            <ResumeCard
+              icon={LuGraduationCap}
+              role="High School Diploma"
+              description="Anuwat High School — completed secondary education and graduated in 2022."
+              date="2022"
+            />
+            <ResumeCard
+              icon={LuGraduationCap}
+              role="Bachelor Degree in Information & Communication Engineering"
+              description="Institute of Technology of Cambodia (ITC) — majoring in ICT with focus on full-stack web development."
+              date="2022 - Present"
+            />
           </div>
         </div>
-
         {/* Experience */}
         <div data-aos="zoom-in" data-aos-delay="200">
           <Header title="My Experience" as="h2" />
