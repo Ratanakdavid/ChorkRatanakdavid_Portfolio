@@ -43,6 +43,23 @@ const projects = [
       { name: "Tailwind CSS" },
     ],
   },
+    {
+    title: "NearMe_ Social",
+    imagePath: "/image/nms.png",
+    description:
+      "NearMe_ Social is a location-aware social media platform  where users can discover, post, and chat with people physically nearby in real time. Users can post messages visible only to people within a selected radius (50m–200m).",
+    tags: ["School Project", "Internet Programming II"],
+    githubUrl: "https://github.com/NearMe-Social",
+    techs: [
+      { name: "Vue.js" },
+      { name: "NestJS" },
+      { name: "PostgreSQL" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "WebSocket" },
+      { name: "Docker" },
+    ],
+  },
 ];
 
 export default function ProjectSection() {
